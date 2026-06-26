@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul Nath S | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- BLUEPRINT CINEMATIC LOADER -->
+    <div id="blueprint-loader" class="blueprint-loader">
+        <div class="loader-layer layer-grid"></div>
+        <div class="loader-layer layer-blueprint">
+            <div class="blueprint-line line-h1"></div>
+            <div class="blueprint-line line-h2"></div>
+            <div class="blueprint-line line-v1"></div>
+            <div class="blueprint-line line-diagonal"></div>
+            <div class="blueprint-box image-box"></div>
+        </div>
+        
+        <div class="loader-layer layer-logo">
+            <svg viewBox="0 0 100 100" class="svg-gn-logo cinematic-logo" id="intro-logo">
+                <!-- Hexagon Border -->
+                <path class="draw-path hexagon" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" d="M50 5 L93 30 L93 70 L50 95 L7 70 L7 30 Z" />
+                <!-- G -->
+                <path class="draw-path letter-g" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter" d="M 50 25 L 30 25 L 30 75 L 50 75 L 50 50 L 40 50" />
+                <!-- N -->
+                <path class="draw-path letter-n" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter" d="M 60 75 L 60 25 L 75 75 L 75 25" />
+            </svg>
+            <div class="energy-pulse" id="energy-pulse"></div>
+        </div>
+
+        <button id="skip-intro">SKIP</button>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar hero-anim">
+        <div class="nav-container">
+            <div class="nav-left"></div>
+            <ul class="nav-links">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="nav-cta">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home" class="hero">
+        <div class="hero-bg-gray"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="logo-area hero-anim logo-target">
+                    <img src="../image (8).png" alt="Logo" class="logo-icon-img" id="hero-logo-img">
+                </div>
+                
+                <div class="hero-text-content">
+                    <p class="hero-greeting hero-anim mask-reveal">Hi, I am</p>
+                    <h1 class="hero-title hero-anim mask-reveal">Gokul Nath S.</h1>
+                    <h2 class="hero-subtitle hero-anim mask-reveal">Building Scalable Web Applications & Business Solutions</h2>
+                    
+                    <div class="social-links hero-anim">
+                        <a href="mailto:gokulnath18082005@gmail.com" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="portrait-container hero-anim portrait-target">
+                    <img src="../file_000000005c1c72068503d05d1e66e6df.png" alt="Gokul Nath S" class="portrait-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- IT BERRIES / Project Highlight -->
+    <section class="it-berries-section">
+        <div class="container-narrow">
+            <h3 class="section-subtitle">PROJECT HIGHLIGHT</h3>
+            <h2 class="berries-title">VITAL GUARDIAN</h2>
+            <p class="berries-desc">Developed an IoT-based healthcare monitoring system to track vital parameters of multiple infants, including heart rate, body temperature, oxygen saturation (SpO2), and respiration rate. The system provides real-time monitoring and automated alerts for abnormal conditions.</p>
+            <a href="#portfolio" class="read-more">READ MORE</a>
+        </div>
+        <div class="bg-watermark">VG</div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section section-light">
+        <div class="container text-center">
+            <div class="boxed-title">ABOUT ME</div>
+            <p class="about-desc">
+                I am a B.Tech Information Technology student with a strong interest in Python programming, full-stack web development, and embedded systems. I possess a passion for learning new technologies and building innovative, user-friendly software solutions.
+            </p>
+            <div class="separator-line">
+                <span class="sep-text">EXPLORE</span>
+            </div>
+            
+            <div class="about-columns">
+                <div class="about-col">
+                    <div class="col-icon">
+                        <!-- Code Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3>WEB DEV</h3>
+                    <p>Contributed to full-stack web and AI-based application development using HTML, CSS, React, Python, PHP, and Node.js. Participated in designing and developing scalable features.</p>
+                </div>
+                <div class="about-col">
+                    <div class="col-icon">
+                        <!-- IoT Icon SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    </div>
+                    <h3>HARDWARE & IoT</h3>
+                    <p>Gained hands-on experience in embedded system fundamentals, microcontrollers, sensors, and IoT-based applications. Worked on interfacing hardware components and real-time data acquisition.</p>
+                </div>
+                <div class="about-col">
+                    <div class="col-icon">
+                        <!-- Problem Solving Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                    </div>
+                    <h3>PROBLEM SOLVING</h3>
+                    <p>Strong problem-solving, teamwork, and communication skills. Adaptable quick learner recognized for innovative startup concepts and hackathon participation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-light pt-0">
+        <div class="container text-center">
+            <div class="separator-line mb-60"></div>
+            <div class="boxed-title">SKILLS</div>
+            
+            <h3 class="skill-group-title">USING NOW:</h3>
+            <div class="skill-grid">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+                    <span>PYTHON</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+                    <span>REACT</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="Embedded C">
+                    <span>EMBEDDED C</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+                    <span>FIGMA</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+                    <span>PHP</span>
+                </div>
+            </div>
+
+            <h3 class="skill-group-title mt-60">LEARNING:</h3>
+            <div class="skill-grid skill-grid-small">
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+                    <span>NODEJS</span>
+                </div>
+                <div class="skill-item">
+                    <!-- Arduino / Hardware Icon Placeholder -->
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg" alt="IoT">
+                    <span>ADVANCED IoT</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <span>DATABASES</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section-portfolio">
+        <div class="portfolio-header">
+            <!-- Simulated background image with dark overlay -->
+            <div class="portfolio-bg"></div>
+            <div class="boxed-title bg-transparent">PORTFOLIO</div>
+        </div>
+        
+        <div class="portfolio-filters">
+            <span class="active">ALL</span>
+            <span>HARDWARE</span>
+            <span>SOFTWARE</span>
+        </div>
+        
+        <div class="portfolio-gallery">
+            <div class="gallery-item">
+                <div class="gallery-bg" style="background: #2a2a2a;"></div>
+                <div class="gallery-overlay">
+                    <h4>Vital Guardian</h4>
+                    <p>IoT Multi-Infant Monitoring</p>
+                    <div class="gallery-links"><a href="#">DEMO</a> | <a href="#">MORE</a></div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-bg" style="background: #333333;"></div>
+                <div class="gallery-overlay">
+                    <h4>Precision Farming</h4>
+                    <p>Climate-Responsive System</p>
+                    <div class="gallery-links"><a href="#">DEMO</a> | <a href="#">MORE</a></div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-bg" style="background: #1f1f1f;"></div>
+                <div class="gallery-overlay">
+                    <h4>Smart Soil Vending</h4>
+                    <p>IoT Industry 4.0 Sensors & AI</p>
+                    <div class="gallery-links"><a href="#">DEMO</a> | <a href="#">MORE</a></div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-bg" style="background: #222222;"></div>
+                <div class="gallery-overlay">
+                    <h4>Water Quality Tracking</h4>
+                    <p>Intelligent Monitoring with Alerts</p>
+                    <div class="gallery-links"><a href="#">DEMO</a> | <a href="#">MORE</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-footer">
+            <p>And many more to come!</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-light" style="padding: 120px 0;">
+        <div class="container contact-container">
+            <div class="contact-left reveal">
+                <h2 class="contact-heading">Let's Build Something Great Together</h2>
+                <p class="contact-desc">
+                    I'm currently available for freelance projects, startup collaborations, and full-time opportunities. Whether you have a specific project in mind or just want to explore how my skills can bring value to your team, let's connect.
+                </p>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>gokulnath18082005@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <span>LinkedIn</span>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Coimbatore, India</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-right reveal delay-200">
+                <form class="modern-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="How can I help you?">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="modern-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="back-to-top">
+            <a href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                <br>BACK TO TOP
+            </a>
+        </div>
+        <div class="footer-social">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="mailto:gokulnath18082005@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+        </div>
+        <div class="copyright">
+            @2026 Gokul Nath S All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
