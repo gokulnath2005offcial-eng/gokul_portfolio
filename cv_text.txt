@@ -1,0 +1,137 @@
+﻿--- PAGE 1 ---
+GOKUL NATH S
+ASPIRING FULL STACK DEVELOPER
+PROFILE
+Aspiring Full Stack Developer and B.Tech Information
+CONTACT Technology student with a strong interest in Python
+programming and web development. Experienced in full-stack
+development through internship and academic projects.
+Possess strong problem-solving, teamwork, and
+gokulnath18082005@gmail.com
+communication skills. Passionate about learning new
++91 8870521757 technologies and building innovative, user-friendly software
+solutions.
+Coimbatore
+PROJECT
+EDUCATION
+2025
+2020-2021
+Vital Guardian Multi-Infant Monitoring System
+10th(State Board of TamilNadu)
+Developed an IoT-based healthcare monitoring system to track
+Sri Venkateshwara Matric Hr Sec School,pudukottai
+vital parameters of multiple infants, including heart rate, body
+90% temperature, oxygen saturation (SpOΓéé), and respiration rate. The
+system provides real-time monitoring, automated alerts for
+abnormal conditions, and centralized data management, enabling
+2022-2023
+healthcare professionals to ensure infant safety and improve
+12th(State Board of TamilNadu) patient care through timely interventions.
+Sri Venkateshwara Matric Hr Sec School,pudukottai
+2026
+60%
+A Data-Driven Support System for Climate-Responsive
+Seed and Irrigation Recommendation in Precision
+2023-2027
+Farming
+B.Tech Information Technology
+Nehru Institute of Engineering and Technology
+Nehru Institute of Engineering and Technology
+Coimbatore
+A Data-Driven Support System for Climate-Responsive Seed and
+Irrigation Recommendation in Precision Farming: Developed a web-
+based precision farming platform that integrates weather
+TECHNICAL SKILLS forecasting, soil analysis, seed recommendations, and irrigation
+planning into a single system. The project aims to assist farmers in
+making data-driven decisions, improving crop productivity,
+Full Stack in Python optimizing water usage, and supporting sustainable agricultural
+practices.
+PHP
+Frontend(HTML,CSS,Js) Conference
+React
+2025
+Canva
+Next-Gen Water Quality Tracking With Automated Alerts
+Figma
+Next-Gen Water Quality Tracking with Automated Alerts: Presented a
+Intermediate in Python
+conference paper on an intelligent water quality monitoring system
+Embedded in C that detects microscopic impurities in water. The system provides
+real-time monitoring and automated alerts for contamination,
+IOT enabling timely intervention and improving water quality
+management and safety.
+--- PAGE 2 ---
+KEY SKILLS PUBLICATIONS
+2025
+Communication
+Vital Guardian Multi-Infant Monitoring System
+Teamwork
+Developed an IoT-based healthcare monitoring system to track
+Time management vital parameters of multiple infants, including heart rate, body
+temperature, oxygen saturation (SpOΓéé), and respiration rate. The
+Problem solving system provides real-time monitoring, automated alerts for
+abnormal conditions, and centralized data management, enabling
+Quick Learner healthcare professionals to ensure infant safety and improve
+patient care through timely interventions.
+Adaptability
+PAPER PRESENTATION
+2025
+Design and Development of a Smart Soil Testing
+VendingMachine Using IOT Industry 4.0 Sensors and AI
+Recommendation System for Sustainable Farming
+Design and Development of a Smart Soil Testing Vending Machine
+Using IoT Industry 4.0 Sensors and AI Recommendation System for
+Sustainable Farming: Developed a smart soil testing system that
+uses IoT sensors and AI-driven recommendations to analyze soil
+health. The solution helps farmers make informed decisions on crop
+selection, fertilizer usage, and sustainable farming practices.
+ACHIVEMENTS
+Best Paper Award in International conference
+March 27-29,2025
+National Level Hackathon in IIT Madras
+New Gen Startup Innovation
+AWARDS
+IOT and Robotics(Mindenious)Aug 2025
+IOT and Robotic(Corizo) Sep 2025
+Introduction to Industry 4.0 an Industrial
+Internet of Things NPTEL(IIT Kharagpur)Jul-oct
+2025
+Cloud Computing (Infosys Springboard)Sep-
+Nov 2025
+IOT (TRIOX Technology) Dec 2025- Jan 2026
+--- PAGE 3 ---
+Seminar/WorkShop
+Cyber Security
+March 2025
+Nehru Institute of Engineering and Technology,coimbatore
+Internship
+Dec-Jan
+Triox Technologies
+IoT & Embedded Systems Intern
+Completed a one-month internship in IoT and
+Embedded Systems at Triox Technologies. Gained
+hands-on experience in embedded system
+fundamentals, microcontrollers, sensors, and IoT-
+based applications. Worked on interfacing hardware
+components, understanding real-time data
+acquisition, and implementing basic IoT
+communication concepts. Developed practical
+knowledge of embedded programming, hardware-
+software integration, and troubleshooting
+techniques while working on industry-oriented
+projects.
+Elcodamics
+Software Development Intern
+Completed a 3-month internship at Elcodamics,
+contributing to full-stack web development and AI-
+based application development. Worked on both
+frontend and backend technologies, including HTML,
+CSS, React, Python, PHP, and Node.js. Participated in
+designing and developing web application features,
+integrating backend services, and creating AI-
+powered tools. Assisted in CRM development,
+database management, testing, debugging, and
+deployment activities. Gained practical experience in
+software development life cycle (SDLC), teamwork,
+problem-solving, and delivering scalable business
+solutions.

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gokul Nath S — Full Stack Developer & Innovator</title>
+  <meta name="description" content="Gokul Nath S — Aspiring Full Stack Developer, IoT Engineer & Researcher from Coimbatore. Explore his projects, internships, research papers and more." />
+  <meta name="keywords" content="Gokul Nath S, Full Stack Developer, IoT, React, Python, Web Development, Portfolio" />
+  <meta property="og:title" content="Gokul Nath S — Universe Portfolio" />
+  <meta property="og:description" content="Aspiring Full Stack Developer. One continuous space journey through skills, projects and experience." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/scenes.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">GN<span class="plasma">.</span></div>
+    <ul class="nav-links" role="list">
+      <li><a href="#hero" class="nav-link" aria-label="Go to home">Home</a></li>
+      <li><a href="#about" class="nav-link" aria-label="Go to about">Origin</a></li>
+      <li><a href="#skills" class="nav-link" aria-label="Go to skills">Skills</a></li>
+      <li><a href="#work" class="nav-link" aria-label="Go to work">Mission</a></li>
+      <li><a href="#archives" class="nav-link" aria-label="Go to archives">Archives</a></li>
+      <li><a href="#contact" class="nav-link" aria-label="Go to contact">Portal</a></li>
+    </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true">
+    <a href="#hero" class="nav-mobile-link">Home</a>
+    <a href="#about" class="nav-mobile-link">Origin</a>
+    <a href="#skills" class="nav-mobile-link">Skills</a>
+    <a href="#work" class="nav-mobile-link">Mission</a>
+    <a href="#archives" class="nav-mobile-link">Archives</a>
+    <a href="#contact" class="nav-mobile-link">Portal</a>
+  </div>
+
+  <!-- BACKGROUND CANVAS (persistent star field) -->
+  <canvas id="star-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════ SCENE 1: THE VOID (Hero) ═══════════ -->
+  <section id="hero" class="scene scene-hero" role="banner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span class="hero-badge-text mono">FULL STACK DEVELOPER</span>
+      </div>
+      <h1 class="hero-name" id="hero-name">GOKUL NATH S</h1>
+      <p class="hero-subtitle">
+        <span id="typed-text" aria-label="Dynamic subtitle"></span>
+        <span class="cursor-blink" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-tagline">Building the future, one commit at a time.</p>
+      <div class="hero-cta-group">
+        <a href="#about" class="btn btn-primary magnetic" id="enter-btn" aria-label="Enter the portfolio universe">
+          <span class="btn-text">Enter the Universe</span>
+          <span class="btn-glow" aria-hidden="true"></span>
+        </a>
+        <a href="#contact" class="btn btn-ghost" aria-label="Get in touch">
+          <span>Get in Touch</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number mono">3+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number mono">2</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number mono">3+</span>
+          <span class="stat-label">Publications</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-wrapper" aria-hidden="true">
+      <div class="hero-orbit orbit-1"></div>
+      <div class="hero-orbit orbit-2"></div>
+      <div class="hero-orbit orbit-3"></div>
+      <div class="hero-img-glow"></div>
+      <img src="assets/img/gokul.png" alt="Gokul Nath S" class="hero-portrait" id="hero-portrait" loading="eager" />
+    </div>
+    <div class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-text mono">SCROLL</span>
+      <div class="scroll-line">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SCENE 2: ORIGIN STORY (About + Education) ═══════════ -->
+  <section id="about" class="scene scene-about" aria-label="About and Education">
+    <div class="section-header reveal-up">
+      <span class="section-label mono plasma">// SCENE 02</span>
+      <h2 class="section-title">Origin Story</h2>
+      <p class="section-desc">The journey from curious student to aspiring developer.</p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Profile side -->
+      <div class="about-profile reveal-left">
+        <div class="about-card glass">
+          <div class="about-avatar-mini">
+            <img src="assets/img/gokul.png" alt="Gokul Nath S profile" loading="lazy" />
+          </div>
+          <h3 class="about-name">Gokul Nath S</h3>
+          <p class="about-role plasma mono">Aspiring Full Stack Developer</p>
+          <p class="about-bio">
+            B.Tech Information Technology student at Nehru Institute of Engineering and Technology, Coimbatore. 
+            Passionate about Python, web development, and building innovative, user-friendly software solutions 
+            that make a real difference.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Quick Learner</span>
+            <span class="tag">IoT Enthusiast</span>
+            <span class="tag">Open Source</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education planets -->
+      <div class="education-orbits reveal-right">
+        <h3 class="edu-heading">Education Journey</h3>
+        <div class="planet-cards">
+          <!-- Planet 1 -->
+          <div class="planet-card glass" data-planet="1">
+            <div class="planet-orb orb-blue">
+              <span class="planet-icon">🌍</span>
+            </div>
+            <div class="planet-info">
+              <span class="planet-year mono solar">2020 – 2021</span>
+              <h4 class="planet-degree">10th Grade</h4>
+              <p class="planet-school">Sri Venkateshwara Matric Hr Sec School, Pudukottai</p>
+              <p class="planet-board">State Board of Tamil Nadu</p>
+              <div class="planet-score">
+                <span class="score-label">Score</span>
+                <span class="score-value plasma">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Constellation connector -->
+          <div class="constellation-line" aria-hidden="true">
+            <svg viewBox="0 0 100 40" preserveAspectRatio="none">
+              <line x1="0" y1="20" x2="100" y2="20" stroke="rgba(0,212,255,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
+              <circle cx="20" cy="20" r="2" fill="#00D4FF"/>
+              <circle cx="50" cy="20" r="2" fill="#00D4FF"/>
+              <circle cx="80" cy="20" r="2" fill="#00D4FF"/>
+            </svg>
+          </div>
+
+          <!-- Planet 2 -->
+          <div class="planet-card glass" data-planet="2">
+            <div class="planet-orb orb-purple">
+              <span class="planet-icon">🪐</span>
+            </div>
+            <div class="planet-info">
+              <span class="planet-year mono solar">2022 – 2023</span>
+              <h4 class="planet-degree">12th Grade</h4>
+              <p class="planet-school">Sri Venkateshwara Matric Hr Sec School, Pudukottai</p>
+              <p class="planet-board">State Board of Tamil Nadu</p>
+              <div class="planet-score">
+                <span class="score-label">Score</span>
+                <span class="score-value plasma">60%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Constellation connector -->
+          <div class="constellation-line" aria-hidden="true">
+            <svg viewBox="0 0 100 40" preserveAspectRatio="none">
+              <line x1="0" y1="20" x2="100" y2="20" stroke="rgba(124,58,237,0.4)" stroke-width="1" stroke-dasharray="4,4"/>
+              <circle cx="20" cy="20" r="2" fill="#7C3AED"/>
+              <circle cx="50" cy="20" r="2" fill="#7C3AED"/>
+              <circle cx="80" cy="20" r="2" fill="#7C3AED"/>
+            </svg>
+          </div>
+
+          <!-- Planet 3 -->
+          <div class="planet-card glass active-planet" data-planet="3">
+            <div class="planet-orb orb-cyan">
+              <span class="planet-icon">🚀</span>
+            </div>
+            <div class="planet-info">
+              <span class="planet-year mono solar">2023 – 2027</span>
+              <h4 class="planet-degree">B.Tech Information Technology</h4>
+              <p class="planet-school">Nehru Institute of Engineering and Technology</p>
+              <p class="planet-board">Coimbatore, Tamil Nadu</p>
+              <div class="planet-score">
+                <span class="score-label">Status</span>
+                <span class="score-value plasma">In Progress ✦</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SCENE 3: SKILL CONSTELLATION ═══════════ -->
+  <section id="skills" class="scene scene-skills" aria-label="Skills">
+    <div class="section-header reveal-up">
+      <span class="section-label mono plasma">// SCENE 03</span>
+      <h2 class="section-title">Skill Constellation</h2>
+      <p class="section-desc">Hover over a node to explore. Lines show connections.</p>
+    </div>
+    <canvas id="skill-canvas" aria-label="Interactive skill constellation network" role="img"></canvas>
+    <div class="skills-legend reveal-up">
+      <div class="legend-item"><span class="legend-dot" style="background:#00D4FF"></span><span>Web & Frontend</span></div>
+      <div class="legend-item"><span class="legend-dot" style="background:#7C3AED"></span><span>Backend & Full Stack</span></div>
+      <div class="legend-item"><span class="legend-dot" style="background:#F59E0B"></span><span>IoT & Embedded</span></div>
+      <div class="legend-item"><span class="legend-dot" style="background:#10B981"></span><span>Tools & Design</span></div>
+    </div>
+    <!-- Fallback skill list for accessibility/no-JS -->
+    <div class="skills-list-fallback" aria-label="Skills list">
+      <span>Full Stack Python</span><span>PHP</span><span>HTML/CSS/JS</span>
+      <span>React</span><span>Next.js</span><span>Figma</span>
+      <span>Canva</span><span>IoT</span><span>Embedded C</span>
+    </div>
+  </section>
+
+  <!-- ═══════════ SCENE 4: MISSION LOG (Work + Projects) ═══════════ -->
+  <section id="work" class="scene scene-work" aria-label="Internships and Projects">
+    <div class="section-header reveal-up">
+      <span class="section-label mono plasma">// SCENE 04</span>
+      <h2 class="section-title">Mission Log</h2>
+      <p class="section-desc">Internships earned. Projects launched. Missions accomplished.</p>
+    </div>
+
+    <div class="work-layout">
+      <!-- Timeline -->
+      <div class="work-timeline reveal-left" role="list" aria-label="Career timeline">
+        <div class="timeline-track" aria-hidden="true"></div>
+        
+        <div class="timeline-item active" data-target="panel-triox" role="listitem" tabindex="0" aria-label="Triox Technologies internship">
+          <div class="timeline-node">
+            <div class="tnode-ring"></div>
+            <div class="tnode-core"></div>
+          </div>
+          <div class="timeline-text">
+            <span class="t-date mono solar">Dec – Jan 2025/26</span>
+            <h4 class="t-title">Triox Technologies</h4>
+            <span class="t-role">IoT & Embedded Systems Intern</span>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-target="panel-elco" role="listitem" tabindex="0" aria-label="Elcodamics internship">
+          <div class="timeline-node">
+            <div class="tnode-ring"></div>
+            <div class="tnode-core"></div>
+          </div>
+          <div class="timeline-text">
+            <span class="t-date mono solar">3 Months</span>
+            <h4 class="t-title">Elcodamics</h4>
+            <span class="t-role">Software Development Intern</span>
+          </div>
+        </div>
+
+        <div class="timeline-divider" aria-hidden="true"><span class="mono plasma">// PROJECTS</span></div>
+
+        <div class="timeline-item" data-target="panel-vital" role="listitem" tabindex="0" aria-label="Vital Guardian project">
+          <div class="timeline-node node-project">
+            <div class="tnode-ring"></div>
+            <div class="tnode-core"></div>
+          </div>
+          <div class="timeline-text">
+            <span class="t-date mono solar">2025</span>
+            <h4 class="t-title">Vital Guardian</h4>
+            <span class="t-role">IoT Healthcare Project</span>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-target="panel-farming" role="listitem" tabindex="0" aria-label="Precision farming project">
+          <div class="timeline-node node-project">
+            <div class="tnode-ring"></div>
+            <div class="tnode-core"></div>
+          </div>
+          <div class="timeline-text">
+            <span class="t-date mono solar">2026</span>
+            <h4 class="t-title">Precision Farming</h4>
+            <span class="t-role">Data-Driven Platform</span>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-target="panel-water" role="listitem" tabindex="0" aria-label="Water quality project">
+          <div class="timeline-node node-project">
+            <div class="tnode-ring"></div>
+            <div class="tnode-core"></div>
+          </div>
+          <div class="timeline-text">
+            <span class="t-date mono solar">2025</span>
+            <h4 class="t-title">Water Quality Tracker</h4>
+            <span class="t-role">Conference Paper</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Panels -->
+      <div class="work-panels reveal-right">
+        <!-- Triox Panel -->
+        <div class="work-panel active" id="panel-triox" role="article" aria-label="Triox Technologies details">
+          <div class="panel-header">
+            <div class="panel-icon" style="background: linear-gradient(135deg,#00D4FF22,#00D4FF44)">🔬</div>
+            <div>
+              <h3 class="panel-title">Triox Technologies</h3>
+              <span class="panel-badge">Internship</span>
+            </div>
+          </div>
+          <p class="panel-period mono solar">IoT & Embedded Systems Intern · Dec–Jan 2025/26</p>
+          <p class="panel-desc">
+            Completed a one-month internship in IoT and Embedded Systems. Gained hands-on experience in 
+            embedded system fundamentals, microcontrollers, sensors, and IoT-based applications. Worked on 
+            interfacing hardware components, real-time data acquisition, and implementing IoT communication 
+            concepts.
+          </p>
+          <div class="panel-tags">
+            <span class="tag">Embedded C</span>
+            <span class="tag">IoT</span>
+            <span class="tag">Microcontrollers</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">SDLC</span>
+          </div>
+        </div>
+
+        <!-- Elcodamics Panel -->
+        <div class="work-panel" id="panel-elco" role="article" aria-label="Elcodamics details">
+          <div class="panel-header">
+            <div class="panel-icon" style="background: linear-gradient(135deg,#7C3AED22,#7C3AED44)">💻</div>
+            <div>
+              <h3 class="panel-title">Elcodamics</h3>
+              <span class="panel-badge nova">Internship</span>
+            </div>
+          </div>
+          <p class="panel-period mono solar">Software Development Intern · 3 Months</p>
+          <p class="panel-desc">
+            Contributed to full-stack web development and AI-based application development. Worked on 
+            frontend and backend technologies including HTML, CSS, React, Python, PHP, and Node.js. 
+            Participated in CRM development, database management, testing, debugging, and deployment. 
+            Gained practical SDLC experience delivering scalable business solutions.
+          </p>
+          <div class="panel-tags">
+            <span class="tag">React</span>
+            <span class="tag">Python</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">AI Tools</span>
+            <span class="tag">CRM</span>
+          </div>
+        </div>
+
+        <!-- Vital Guardian Panel -->
+        <div class="work-panel" id="panel-vital" role="article" aria-label="Vital Guardian project details">
+          <div class="panel-header">
+            <div class="panel-icon" style="background: linear-gradient(135deg,#F59E0B22,#F59E0B44)">❤️</div>
+            <div>
+              <h3 class="panel-title">Vital Guardian</h3>
+              <span class="panel-badge solar-badge">Project · 2025</span>
+            </div>
+          </div>
+          <p class="panel-period mono solar">Multi-Infant Monitoring System</p>
+          <p class="panel-desc">
+            Developed an IoT-based healthcare monitoring system to track vital parameters of multiple infants, 
+            including heart rate, body temperature, oxygen saturation (SpO₂), and respiration rate. 
+            Provides real-time monitoring, automated alerts for abnormal conditions, and centralized data 
+            management — enabling healthcare professionals to ensure infant safety through timely interventions.
+          </p>
+          <div class="panel-tags">
+            <span class="tag">IoT</span>
+            <span class="tag">Healthcare</span>
+            <span class="tag">Real-time</span>
+            <span class="tag">Alerts</span>
+            <span class="tag">Embedded</span>
+          </div>
+          <div class="panel-published">
+            <span class="pub-icon">📄</span>
+            <span class="pub-text">Published — International Conference 2025</span>
+          </div>
+        </div>
+
+        <!-- Precision Farming Panel -->
+        <div class="work-panel" id="panel-farming" role="article" aria-label="Precision Farming project details">
+          <div class="panel-header">
+            <div class="panel-icon" style="background: linear-gradient(135deg,#10B98122,#10B98144)">🌾</div>
+            <div>
+              <h3 class="panel-title">Precision Farming</h3>
+              <span class="panel-badge" style="background: rgba(16,185,129,0.15); color:#10B981">Project · 2026</span>
+            </div>
+          </div>
+          <p class="panel-period mono solar">Data-Driven Seed & Irrigation Platform</p>
+          <p class="panel-desc">
+            Developed a web-based precision farming platform integrating weather forecasting, soil analysis, 
+            seed recommendations, and irrigation planning into a single system. Assists farmers in making 
+            data-driven decisions, improving crop productivity, optimizing water usage, and supporting 
+            sustainable agricultural practices.
+          </p>
+          <div class="panel-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Web Dev</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">IoT Sensors</span>
+            <span class="tag">AI/ML</span>
+          </div>
+        </div>
+
+        <!-- Water Quality Panel -->
+        <div class="work-panel" id="panel-water" role="article" aria-label="Water quality tracker details">
+          <div class="panel-header">
+            <div class="panel-icon" style="background: linear-gradient(135deg,#00D4FF22,#7C3AED44)">💧</div>
+            <div>
+              <h3 class="panel-title">Water Quality Tracker</h3>
+              <span class="panel-badge">Conference · 2025</span>
+            </div>
+          </div>
+          <p class="panel-period mono solar">Next-Gen Water Quality Monitoring with Automated Alerts</p>
+          <p class="panel-desc">
+            Presented a conference paper on an intelligent water quality monitoring system that detects 
+            microscopic impurities in water. The system provides real-time monitoring and automated alerts 
+            for contamination, enabling timely intervention and improving water quality management and safety.
+          </p>
+          <div class="panel-tags">
+            <span class="tag">IoT</span>
+            <span class="tag">Sensors</span>
+            <span class="tag">Automation</span>
+            <span class="tag">Monitoring</span>
+          </div>
+          <div class="panel-published">
+            <span class="pub-icon">🏆</span>
+            <span class="pub-text">Conference Paper Presentation — 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SCENE 5: ARCHIVES ═══════════ -->
+  <section id="archives" class="scene scene-archives" aria-label="Research, Certifications and Achievements">
+    <div class="section-header reveal-up">
+      <span class="section-label mono plasma">// SCENE 05</span>
+      <h2 class="section-title">Archives</h2>
+      <p class="section-desc">Research published. Certifications earned. Milestones achieved.</p>
+    </div>
+
+    <div class="archives-grid">
+      <!-- Research / Publications -->
+      <div class="archive-col reveal-up" style="--delay:0s">
+        <h3 class="archive-col-title">
+          <span class="archive-col-icon">📚</span> Publications
+        </h3>
+        <div class="book-card glass">
+          <div class="book-spine"></div>
+          <div class="book-body">
+            <span class="book-year mono solar">2025</span>
+            <h4 class="book-title">Vital Guardian Multi-Infant Monitoring System</h4>
+            <p class="book-desc">IoT-based healthcare monitoring for real-time infant vital parameter tracking with automated alerts.</p>
+            <span class="book-type plasma">International Conference Paper</span>
+          </div>
+        </div>
+        <div class="book-card glass">
+          <div class="book-spine nova-spine"></div>
+          <div class="book-body">
+            <span class="book-year mono solar">2025</span>
+            <h4 class="book-title">Smart Soil Testing Vending Machine</h4>
+            <p class="book-desc">IoT Industry 4.0 Sensors and AI Recommendation System for Sustainable Farming.</p>
+            <span class="book-type plasma">Paper Presentation</span>
+          </div>
+        </div>
+        <div class="book-card glass">
+          <div class="book-spine gold-spine"></div>
+          <div class="book-body">
+            <span class="book-year mono solar">2025</span>
+            <h4 class="book-title">Next-Gen Water Quality Tracking</h4>
+            <p class="book-desc">Intelligent water quality monitoring with automated alerts for microscopic impurity detection.</p>
+            <span class="book-type plasma">Conference Presentation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="archive-col reveal-up" style="--delay:0.15s">
+        <h3 class="archive-col-title">
+          <span class="archive-col-icon">🏅</span> Certifications
+        </h3>
+        <div class="cert-grid">
+          <div class="cert-badge glass">
+            <div class="cert-crystal cyan-crystal"></div>
+            <span class="cert-name">IoT & Robotics</span>
+            <span class="cert-org mono">Mindenious · Aug 2025</span>
+          </div>
+          <div class="cert-badge glass">
+            <div class="cert-crystal purple-crystal"></div>
+            <span class="cert-name">IoT & Robotics</span>
+            <span class="cert-org mono">Corizo · Sep 2025</span>
+          </div>
+          <div class="cert-badge glass">
+            <div class="cert-crystal gold-crystal"></div>
+            <span class="cert-name">Industry 4.0 & IIoT</span>
+            <span class="cert-org mono">NPTEL · IIT Kharagpur · 2025</span>
+          </div>
+          <div class="cert-badge glass">
+            <div class="cert-crystal blue-crystal"></div>
+            <span class="cert-name">Cloud Computing</span>
+            <span class="cert-org mono">Infosys Springboard · 2025</span>
+          </div>
+          <div class="cert-badge glass">
+            <div class="cert-crystal teal-crystal"></div>
+            <span class="cert-name">IoT Fundamentals</span>
+            <span class="cert-org mono">Triox Technology · 2025</span>
+          </div>
+          <div class="cert-badge glass">
+            <div class="cert-crystal pink-crystal"></div>
+            <span class="cert-name">Cyber Security</span>
+            <span class="cert-org mono">NIET Seminar · Mar 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="archive-col reveal-up" style="--delay:0.3s">
+        <h3 class="archive-col-title">
+          <span class="archive-col-icon">🌟</span> Achievements
+        </h3>
+        <div class="achievement-card glass gold-card">
+          <div class="ach-star-burst" aria-hidden="true">★</div>
+          <div class="ach-content">
+            <span class="ach-badge solar">🥇 Best Paper Award</span>
+            <h4 class="ach-title">International Conference</h4>
+            <p class="ach-desc">Awarded Best Paper at an International Conference on March 27–29, 2025 for innovative research contribution.</p>
+          </div>
+        </div>
+        <div class="achievement-card glass nova-card">
+          <div class="ach-star-burst" aria-hidden="true">⚡</div>
+          <div class="ach-content">
+            <span class="ach-badge nova">🚀 National Level</span>
+            <h4 class="ach-title">IIT Madras Hackathon</h4>
+            <p class="ach-desc">Participated in the National Level Hackathon at IIT Madras — New Gen Startup Innovation track.</p>
+          </div>
+        </div>
+        <div class="achievement-card glass">
+          <div class="ach-star-burst" aria-hidden="true">💡</div>
+          <div class="ach-content">
+            <span class="ach-badge plasma">🔬 Research</span>
+            <h4 class="ach-title">3 Research Papers</h4>
+            <p class="ach-desc">Published and presented 3 research papers across international conferences and national-level events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SCENE 6: THE PORTAL (Contact) ═══════════ -->
+  <section id="contact" class="scene scene-contact" aria-label="Contact">
+    <div class="contact-nebula" aria-hidden="true">
+      <div class="nebula-ring r1"></div>
+      <div class="nebula-ring r2"></div>
+      <div class="nebula-ring r3"></div>
+    </div>
+    <div class="section-header reveal-up">
+      <span class="section-label mono plasma">// SCENE 06</span>
+      <h2 class="section-title">The Portal</h2>
+      <p class="section-desc">All stars converge here. Let's build something amazing.</p>
+    </div>
+
+    <div class="terminal-card glass reveal-up">
+      <div class="terminal-header" aria-hidden="true">
+        <div class="t-dot red"></div>
+        <div class="t-dot yellow"></div>
+        <div class="t-dot green"></div>
+        <span class="t-title mono">gokul@universe ~ contact.sh</span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">
+          <span class="t-prompt mono plasma">❯ </span>
+          <span class="t-cmd mono">whoami</span>
+        </div>
+        <div class="terminal-output">
+          <div class="contact-info-row">
+            <span class="ci-icon">📧</span>
+            <a href="mailto:gokulnath18082005@gmail.com" class="ci-value plasma" aria-label="Send email to Gokul">gokulnath18082005@gmail.com</a>
+          </div>
+          <div class="contact-info-row">
+            <span class="ci-icon">📱</span>
+            <a href="tel:+918870521757" class="ci-value plasma" aria-label="Call Gokul">+91 88705 21757</a>
+          </div>
+          <div class="contact-info-row">
+            <span class="ci-icon">📍</span>
+            <span class="ci-value">Coimbatore, Tamil Nadu, India</span>
+          </div>
+        </div>
+        <div class="terminal-line" style="margin-top:1.5rem">
+          <span class="t-prompt mono plasma">❯ </span>
+          <span class="t-cmd mono" id="contact-typed"></span>
+          <span class="cursor-blink" aria-hidden="true">|</span>
+        </div>
+      </div>
+      <div class="contact-cta-grid">
+        <a href="mailto:gokulnath18082005@gmail.com" class="contact-btn magnetic" id="btn-email" aria-label="Email Gokul">
+          <span class="cbtn-icon">✉️</span>
+          <span>Contact</span>
+        </a>
+        <a href="assets/pdf/gokul_cv.pdf" class="contact-btn magnetic" id="btn-resume" download aria-label="Download Resume">
+          <span class="cbtn-icon">📄</span>
+          <span>Resume</span>
+        </a>
+        <a href="https://linkedin.com/in/gokulnath" class="contact-btn magnetic" id="btn-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <span class="cbtn-icon">💼</span>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/gokulnath2005offcial-eng" class="contact-btn magnetic" id="btn-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <span class="cbtn-icon">🐙</span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+      <p class="footer-text mono">
+        End of transmission. <span class="plasma">// GOKUL NATH S</span>
+      </p>
+      <p class="footer-sub">© 2025 · Built with passion & a lot of ☕</p>
+    </footer>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" integrity="sha512-jnG4/6ESaqWzLnkuSWDmFApQ9KZDE5JVlLVGqGMR8q0fCWLTOkBRkjxh1qjrQg0jbYp6TI+KXUx0b7hqalDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OJ9O3F0UNnQkPcm1HtxnCm57BKFKtDGIDlEIcXydBwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic5AT0hFSSCMmNHAlQbpHCOJPBaGZlrJAIbkGYRK3fFmZqMrWb0Gl8v5o9Z1bZVSiVuBxdtROzgfMAlpixQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/stars.js"></script>
+  <script src="assets/js/skills.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+/* ═══════════════════════════════════════════════════════
+   SCROLL ANIMATIONS & MICRO-INTERACTIONS
+   ═══════════════════════════════════════════════════════ */
+
+/* Base reveal states */
+.reveal-up,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+  will-change: opacity, transform;
+}
+
+.reveal-up { transform: translateY(40px); }
+.reveal-left { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+
+.reveal-up.in-view,
+.reveal-left.in-view,
+.reveal-right.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Delay helpers */
+[style*="--delay"] { transition-delay: var(--delay, 0s) !important; }
+
+/* ═══════════ HERO KEYFRAMES ═══════════ */
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideLeft {
+  from { opacity: 0; transform: translateX(32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ═══════════ MAGNETIC EFFECT ═══════════ */
+.magnetic {
+  transition: transform var(--dur-med) var(--ease-out);
+  will-change: transform;
+}
+
+/* ═══════════ TILT (3D card hover) ═══════════ */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform var(--dur-med) var(--ease-out);
+  will-change: transform;
+}
+
+/* ═══════════ PLANET CARD STAGGER ═══════════ */
+.planet-card:nth-child(1) { transition-delay: 0s; }
+.planet-card:nth-child(3) { transition-delay: 0.12s; }
+.planet-card:nth-child(5) { transition-delay: 0.24s; }
+
+/* ═══════════ ACHIEVEMENT SHIMMER ═══════════ */
+.gold-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(245,158,11,0.06) 50%, transparent 60%);
+  background-size: 200% 100%;
+  animation: shimmer 4s linear infinite;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ═══════════ SECTION BACKGROUND GRADIENTS ═══════════ */
+.scene-about {
+  background: linear-gradient(180deg, transparent 0%, rgba(0,212,255,0.02) 50%, transparent 100%);
+}
+
+.scene-skills {
+  background: linear-gradient(180deg, transparent 0%, rgba(124,58,237,0.04) 50%, transparent 100%);
+}
+
+.scene-work {
+  background: linear-gradient(180deg, transparent 0%, rgba(0,212,255,0.02) 50%, transparent 100%);
+}
+
+.scene-archives {
+  background: linear-gradient(180deg, transparent 0%, rgba(245,158,11,0.02) 50%, transparent 100%);
+}
+
+.scene-contact {
+  background: radial-gradient(ellipse at 50% 50%, rgba(0,212,255,0.05) 0%, transparent 70%);
+}
+
+/* ═══════════ HOLOGRAPHIC PANEL GLOW ═══════════ */
+.work-panel {
+  position: relative;
+}
+
+.work-panel::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 21px;
+  background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(124,58,237,0.1), transparent);
+  opacity: 0;
+  transition: opacity var(--dur-med);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.work-panel.active::before {
+  opacity: 1;
+}
+
+/* ═══════════ STAR CANVAS PARALLAX HINTS ═══════════ */
+.star-layer-1 { animation: star-drift-1 60s linear infinite; }
+.star-layer-2 { animation: star-drift-2 90s linear infinite; }
+
+@keyframes star-drift-1 {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100px); }
+}
+
+@keyframes star-drift-2 {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(-60px) translateX(30px); }
+}
+
+/* ═══════════ REDUCED MOTION ═══════════ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal-up,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-badge,
+  .hero-name,
+  .hero-subtitle,
+  .hero-tagline,
+  .hero-cta-group,
+  .hero-stats,
+  .hero-image-wrapper,
+  .scroll-indicator {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+/* ═══════════ PAGE LOADER ═══════════ */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--void);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-logo {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--plasma);
+  letter-spacing: -0.04em;
+}
+
+.loader-bar {
+  width: 200px;
+  height: 2px;
+  background: var(--ghost);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loader-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--plasma), var(--nova));
+  animation: loader-grow 1.5s var(--ease-out) forwards;
+  border-radius: 2px;
+}
+
+@keyframes loader-grow {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.loader-text {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--star-muted);
+  letter-spacing: 0.15em;
+}
